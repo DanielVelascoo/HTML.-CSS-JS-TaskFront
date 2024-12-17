@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Tareas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Gestión de Tareas</h1>
+    
+    <!-- Crear una nueva tarea -->
+    <h2>Crear una nueva tarea</h2>
+    <input type="text" id="newTitle" placeholder="Título de la tarea">
+    <input type="text" id="newDescription" placeholder="Descripción de la tarea">
+    <input type="date" id="newExpirationDate">
+    <button id="createTask">Crear Tarea</button>
+    <!-- Tabla para mostrar las tareas -->
+    <h2>Tareas</h2>
+    <table id="tasksTable">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Título</th>
+                <th>Descripción</th>
+                <th>Fecha de Expiración</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Las tareas se agregarán aquí -->
+        </tbody>
+    </table>
+
+
+    <!-- Actualizar una tarea -->
+    <h2>Actualizar una tarea</h2>
+    <input type="text" id="updateTitle" placeholder="Nuevo título de la tarea">
+    <input type="text" id="updateDescription" placeholder="Nueva descripción">
+    <input type="date" id="updateExpirationDate">
+    <button id="updateTaskBtn">Actualizar Tarea</button>
+
+    <script src="task.js">
+       
+    </script>
+</body>
+</html>

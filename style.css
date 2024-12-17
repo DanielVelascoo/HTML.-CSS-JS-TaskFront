@@ -1,0 +1,109 @@
+/* Estilo general del cuerpo */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+}
+
+/* Título principal */
+h1 {
+    color: #333;
+    font-size: 2.5rem;
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* Títulos de subsecciones */
+h2 {
+    color: #444;
+    font-size: 1.8rem;
+    margin: 20px 0;
+}
+
+/* Tabla de tareas */
+#tasksTable {
+    width: 80%;
+    border-collapse: collapse;
+    margin-top: 30px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+#tasksTable th, #tasksTable td {
+    padding: 12px 20px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+#tasksTable th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+#tasksTable tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Estilo de los botones de acción */
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+button:active {
+    background-color: #387b36;
+}
+
+/* Estilo para los formularios */
+input[type="text"],
+input[type="date"] {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: #fff;
+    box-sizing: border-box;
+}
+
+input[type="text"]:focus,
+input[type="date"]:focus {
+    border-color: #4CAF50;
+    outline: none;
+}
+
+/* Estilo para los contenedores del formulario */
+#newTitle, #newDescription, #newExpirationDate,
+#updateTitle, #updateDescription, #updateExpirationDate {
+    max-width: 500px;
+    width: 100%;
+}
+
+/* Espaciado general entre las secciones */
+section {
+    margin-bottom: 40px;
+}
+
+/* Botones de acción de la tabla (editar, eliminar) */
+button {
+    margin-right: 5px;
+}
